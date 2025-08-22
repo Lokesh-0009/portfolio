@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Video Editing for Creators & Brands">
+    <meta property="og:title" content="LOKESH EDITS">
+    <meta property="og:description" content="Crafting Videos That Captivate & Convert">
+    <meta property="og:image" content="path_to_image.jpg">
+    <title>LOKESH EDITS - Video Editor Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>Lokesh creatives</h1>
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Crafting Videos That Captivate & Convert</h2>
+            <p class="hero-subtext">Professional Video Editing for Creators & Brands</p>
+            <div class="hero-buttons">
+                <a href="#work" class="btn">Watch My Work</a>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="work" class="work">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" onclick="openModal('https://www.instagram.com/reel/DNqegP-P5Qf/?igsh=MTl5amRhttps://youtube.com/shorts/nzJXn8cIYt8?si=OvkDgtDm2LOKycUz1dDhiMnA2cg==')">
+                <img src="project1.png" alt="Project 1">
+                <h3>Motion design</h3>
+                <p>"Experience dynamic motion design paired with immersive sound design, bringing visuals to life with rhythm, style, and energy."</p>
+            </div>
+            <div class="project-card" onclick="openModal('https://www.instagram.com/reel/DNqe5R-v8y5/?igsh=MW96eWRuOWdhamk2bw==')">
+                <img src="project 2.png" alt="Project 2">
+                <h3>Visual storytelling</h3>
+                <p>"A captivating blend of storytelling and visual effects, designed to engage and inspire audiences."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Services</h2>
+        <div class="service-grid">
+            <div class="service-card">YouTube Shorts & Reels</div>
+            <div class="service-card">Business Ads & Promos</div>
+            <div class="service-card">Motion Graphics & Animation</div>
+            <div class="service-card">Sound Design & Color Grading</div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">Hi, I’m Lokesh, a freelance video editor specializing in animation, transitions, and sound design to make your videos stand out.</p>
+    </section>
+ <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-container">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="mailto:rowtulokesh1123@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>Email
+                        </a>
+                        <a href="https://wa.me/9581125944" class="social-link">
+                            <i class="fab fa-whatsapp"></i>WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/reellcraft.ai" class="social-link">
+                            <i class="fab fa-instagram"></i>Instagram
+                        </a>
+                        <a href="LINKEDIN_URL" class="social-link">
+                            <i class="fab fa-linkedin"></i>LinkedIn
+                        </a>
+                    </div>
+                    <p class="contact-note">I typically respond within 24 hours. Looking forward to connecting!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="videoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
